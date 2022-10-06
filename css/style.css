@@ -446,6 +446,6 @@ footer{
 }
 
 footer > *{
-    border: 1px solid red;
+    border: 1px solid blue;
     flex-basis: 20%;
 }
