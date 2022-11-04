@@ -3,6 +3,12 @@
     font-family: "raleway","sans-serif";
 }
 
+@media screen and (min-width:769px)  {
+    .searchbutton .fa-solid{
+        display: none;
+    }
+}
+
 @media(max-width:768px){ /* téléphones */
     .onglets{
         flex-basis: 100%;
@@ -23,6 +29,7 @@
         display:inline;
         background-color: #0065fc;
     }
+    
 }
 
 @media screen and (max-width: 768px) /* téléphones */
@@ -437,9 +444,10 @@ nav a:hover{
     transform: scale(1.02);
 }
 
-.searchbutton .fa-solid{
+
+/* .searchbutton .fa-solid{
     display:none;
-}
+} */
 
 /* Filters */
 .filter-list{
