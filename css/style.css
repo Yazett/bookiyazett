@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: "raleway","sans-serif";
 }
-
+ /* Media queries */
 @media screen and (min-width:769px)  {
     .searchbutton .fa-solid{
         display: none;
@@ -37,8 +37,12 @@
     .row-sm{
         display: flex !important;
         flex-direction: column !important;
-
     }
+    
+    .smnomr{
+        margin-right: 0px !important;
+    }
+
     .block-sm-100{
         width: 100% !important;
         padding-top: 10px;
@@ -67,6 +71,43 @@
         height: 180px !important;
     }
 
+    .height500{
+        height: 300px !important;
+    }
+    .height300{
+        height: 310px !important;
+    }
+    .height290{
+        height: 300px !important;
+    }
+    .height250{
+        height: 310px !important;
+    }
+
+    .height240{
+        height: 300px !important;
+    }
+    .height200{
+        height: 310px !important;
+    }
+    .height190{
+        height: 300px !important;
+    }
+
+    .bg-cover{
+        height: 210px !important;
+    }
+    .bg-cover2{
+        height: 210px !important;
+    }
+    .bg-cover3{
+        height: 210px !important;
+    }
+    .bg-cover4{
+        height: 210px !important;
+    }
+
+
     .row2{
         display: inherit; /*important! */
         flex-direction: column;
@@ -84,7 +125,6 @@
     footer{
         flex-direction: column;
     }
-
 
 }
 @media screen and (max-width:992px){   /* tablettes */ 
@@ -117,7 +157,7 @@
 }
 
 body{
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -323,22 +363,17 @@ body{
 /* les plus populaire */
 .card7{
     margin-block: 32px;
-    /* padding: 5px; */
     height: 33.33%;
     display: flex;
-    /* flex-wrap: wrap; */
+
 }
 .card8{
     margin-block: 32px;
-    /* padding: 5px; */
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .card9{
     margin-block: 32px;
-    /* padding: 5px; */
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 .card7 img{
@@ -444,11 +479,6 @@ nav a:hover{
     transform: scale(1.02);
 }
 
-
-/* .searchbutton .fa-solid{
-    display:none;
-} */
-
 /* Filters */
 .filter-list{
     display: flex;
@@ -473,7 +503,6 @@ nav a:hover{
 .filter .fa-solid{
     color: #0065fc;
     background-color: #deebff;
-    /*padding:1rem;*/
     border-radius: 50%;
     margin: -2px;
     width: 48px;
@@ -524,7 +553,6 @@ padding: 0 16px;
 .activities-section{
     display: flex;
     padding: 0;
-    /* object-fit: cover; */
 }
 
 .activities-list img{
@@ -562,7 +590,6 @@ footer{
     background-color: #d9d9d9;
     width: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
     font-size: smaller;
     padding: 16px;
 }
