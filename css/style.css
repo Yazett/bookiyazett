@@ -3,11 +3,15 @@
     font-family: "raleway","sans-serif";
 }
  /* Media queries */
-@media screen and (min-width:769px)  {
-    .searchbutton .fa-solid{
+
+ @media screen and (max-width:768px){
+    .searchtext{
         display: none;
+
     }
-}
+
+ }
+
 
 @media(max-width:768px){ /* téléphones */
     .onglets{
@@ -23,11 +27,13 @@
         border-top-color: transparent;
     }
     .searchbar .searchtext{
-        display:none;
+        display: none;
     }
     .searchbutton .fa-solid{
-        display:inline;
+        display: revert;
         background-color: #0065fc;
+        visibility: visible !important;
+
     }
     
 }
@@ -443,7 +449,7 @@ nav a:hover{
 
 /* searchbar */
 .searchbar{
-    display:flex;
+    display: flex;
     align-items: center;
     font-size: 18px;
 }
@@ -462,6 +468,10 @@ nav a:hover{
 
 .searchbar input::placeholder{
     font-weight: bold;
+}
+
+.searchbutton .fa-solid{
+    visibility: hidden;
 }
 
 .searchbar button{
