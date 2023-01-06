@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Media Queries */
+
+/* Format Tablette */
+
+@media screen and (min-width:768px) {
+    .row2{
+        display: flex !important;
+    }
+    .md-bloc100{
+        width: 100% !important;
+    }
+    .md-bloc75{
+        width: 75% !important;
+    }
+    .md-bloc50{
+        width: 50% !important;
+    }
+    .md-bloc33{
+        width: 33% !important;
+    }
+    .md-bloc25{
+        width: 25% !important;
+    }
+    .md-nomr{
+        margin: 0 !important;
+    }
+    .md-p10{
+        padding: 10px;
+    }
+    .md-mr0{
+        margin-right: 0px;
+    }
+    .md-space{
+        justify-content: space-around;
+    }
+    .md-center{
+        margin: 0 auto !important;
+    }
+    .md-m10{
+        margin: 10px;
+    }
+}
+
+
+/* Format Desktop */
+@media screen and (min-width:992px) {
+    
+}
+
+/* --- Animations --- */
+
+/* Loader
+
+body {
+    text-align:center; 
+} */
+.main {
+    /* text-align: center; */
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+#loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(0, 0, 0,.3);
+    visibility: visible;
+    border-radius: 50%;
+    border-top-color: rgb(0, 0, 0);
+    animation: spin 1s ease-in-out infinite, fadeOut 3s; 
+    -webkit-animation: spin 1s ease-in-out infinite, fadeOut 3s;
+    animation-fill-mode: forwards;
+    /* margin-top: 150px; */
+    margin-left: 50%;
+    /* position: relative;
+    top: 35%; */
+}
+
+@keyframes fadeIn {
+    /* 99% {
+        visibility: hidden;
+    } */
+    100% {
+        visibility: visible;
+        margin-top: -50px;
+    }
+}
+
+@keyframes fadeOut {
+    99% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+to { -webkit-transform: rotate(360deg); }
+}
+
+
+h1{
+    font-family: 'Shrikhand', cursive;
+
+}
+.strong{
+    font-weight: bold;
+}
+
+.thin{
+    font-weight: 300;
+}
+.thin2{
+    font-weight: 300;
+    font-size: small;
+}
+
+.logo{
+    width: 200px;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+button{
+    color: white;
+    height: 60px;
+    
+
+}
+
+.fonctionnement{
+    box-shadow: 2px 2px 2px gray;
+    height: 73px;
+    align-items: center;
+}
+
+.functioNumb{
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -16px;
+    padding-left: 10px;
+    padding-top: 7px;
+    
+}
+
+
+.lieu{
+    margin: 0 auto;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.lieu i{
+    margin-top: 5px;
+
+}
+
+
+
+/* Couleurs */
+
+.purple{
+    color: #9356DC;
+}
+.pink{
+    color: #FF79DA;
+}
+.cyan{
+    color: #99E2D0;
+}
+.grey{
+    color: grey;
+}
+
+
+/* Tailles et display de blocs */
+
+.row{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.aligned{
+    text-align: center;
+}
+.center{
+    margin: 0 auto;
+}
+.bloc100{
+    width: 100%;
+}
+.bloc85{
+    width: 85%;
+}
+.bloc66{
+    width: 66.66%;
+}
+.bloc50{
+    width: 50%;
+}
+.bloc40{
+    width: 40%;
+}
+.bloc33{
+    width: 33.33%;
+}
+.bloc25{
+    width: 25%;
+}
+
+/* margin, padding, border radius etc */
+
+.m0{
+    margin: 0px;
+}
+.m10{
+    margin: 10px;
+}
+.m20{
+    margin: 20px;
+}
+.mt-10{
+    margin-top: -10px;
+}
+.mt-20{
+    margin-top: -20px;
+}
+.mt0{
+    margin-top: 0px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mb-10{
+    margin-bottom: -10px;
+}
+.mb-20{
+    margin-bottom: -20px;
+}
+.mb0{
+    margin-bottom: 0px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.mb50{
+    margin-bottom: 50px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.p0{
+    padding: 0px;
+}
+.p10{
+    padding: 10px;
+}
+.p20{
+    padding: 20px;
+}
+.pt20{
+    padding-top: 20px;
+}
+.pl10{
+    padding-left: 10px;
+}
+.pl20{
+    padding-left: 20px;
+}
+.pr10{
+    padding-right: 10px;
+}
+.pr20{
+    padding-right: 10px;
+}
+.pb20{
+    padding-bottom: 20px;
+}
+.br-50{
+    border-radius: 50px;
+}
+.br-20{
+    border-radius: 20px;
+}
+.br-10{
+    border-radius: 10px;
+}
+
+.bordtop{
+    border-top: 3px solid rgba(128, 128, 128, .1);
+}
+
+
+
+
+/* backgrounds couleurs*/
+
+.bg-white{
+    background-color: #fff;
+}
+.bg-grey1{
+    background-color: #f3f3f3;
+}
+.bg-grey2{
+    background-color: #fafafa;
+}
+.bg-grey3{
+    background-color: #f6f6f6;
+}
+.bg-grey4{
+    background-color: rgb(39, 39, 39);
+}
+.bg-purp{
+    background-color: rgba(147,86,220, .15);
+
+}
+.gradient{
+    background: linear-gradient(#FF79DA,#9356DC);
+    border: none;
+}
+
+
+/* cartes */
+
+.card{
+    /* padding: 5px; */
+    height: 300px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+/* description de cartes */
+.card-body{
+    position: relative;
+}
+.card-body i{
+    position: absolute;
+    font-size: 32px;
+    right: 24px;
+    top: 16px;
+
+}
+.card h3,p{
+    margin: 0;
+    padding: 5px;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card a{
+    text-decoration: none; 
+}
+
+/* Hover de coeurs */
+
+.card-body .fa-solid{
+    color: transparent;
+    background-image: linear-gradient(#ff79DA,#9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms;
+    transform: scale(1.2);
+}
+
+.card-body :hover{
+    opacity: 1 !important;
+}
+
+
+/* footer */
+
+.footer a{
+    color: white;
+}
+
+.footer h3{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* pages restau */
+
+.headimg{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.brtop{
+    border-radius: 15px 15px 0 0;
+}
+
+h1 i{
+    float: right;
+    position: absolute;
+    right: 24px;
+    
+}
+
+.dishes{
+    text-decoration: underline;
+}
+
+.cmdbutton{
+    align-items: center;
+}
